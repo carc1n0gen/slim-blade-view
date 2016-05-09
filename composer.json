@@ -1,0 +1,12 @@
+{
+    "name": "carc1n0gen/slim-blade-view",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Slim\\Views\\": "src/"
+        }
+    },
+    "require": {
+        "philo/laravel-blade": "^3.1"
+    }
+}
