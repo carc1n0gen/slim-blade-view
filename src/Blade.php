@@ -33,6 +33,6 @@ class Blade
 	 */
 	public function render($response, $template, $args = [])
 	{
-		$response->getBody()->write($this->bladeInstance->view()->make($template, $args)->render());
+		return $response->getBody()->write($this->bladeInstance->view()->make($template, $args)->render());
 	}
 }
