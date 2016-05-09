@@ -14,7 +14,7 @@ $app = new Slim\App();
 $container = $app->getContainer();
 
 $container['view'] = function ($c) {
-	return new App\Core\Adapters\Blade(
+	return new Slim\Views\Blade(
 		__DIR__.'/views',
 		__DIR__.'/cache'
 	);
